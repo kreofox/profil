@@ -1,0 +1,18 @@
+Деактивация виртуальной среды
+deactivate
+Установка виртуальной среды
+cd C:\django - можете любой создать папку и назваь как хоие гланое англиском 
+Затем для создания виртуальной среды выполним следующую команду
+python -m venv .venv
+C:\Users\eugen>cd C:\django Переход к папке будущей виртуальной среды
+C:\django>python -m venv .venv Создание виртуальной среды
+Активация в Windows в коммандной строке
+.venv\Scripts\activate.bat
+Активация в Windows в PowerShell
+.venv\Scripts\Activate.ps1
+Активация в Linux и MacOS
+source .venv/bin/activate
+.venv\Scripts\activate.bat Активация виртуальной среды
+(.venv) C:\django>  Виртуальная среда активирована
+Установка Django
+python -m pip install Django
