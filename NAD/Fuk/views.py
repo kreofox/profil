@@ -10,11 +10,11 @@ def index(request):
     data = {"header": header, "langs": langs, "name": user}
     return render(request,"index.html", context=data)
 def mainthing(request):
-    return render("mainthing.html")
+    return render(request, "mainthing.html")
 def about(request):
-    return render("about.html")
+    return render(request, "about.html")
 def concact(request):
-    return render("contact.html")
+    return render(request, "contact.html")
 
 
 
