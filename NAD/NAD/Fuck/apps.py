@@ -1,6 +1,6 @@
 from django.apps import AppConfig
 
 
-class FukConfig(AppConfig):
+class FuckConfig(AppConfig):
     default_auto_field = 'django.db.models.BigAutoField'
-    name = 'Fuk'
+    name = 'Fuck'
