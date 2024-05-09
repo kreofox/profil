@@ -1,7 +1,8 @@
 from django.http import HttpResponse
+from django.shortcuts import render
 
 def index(request):
-    return HttpResponse("<h2>Home<h2>")
+    return render(request, "profil.html")
 def about(request):
     return HttpResponse("Site")
 def contact(request, name, age):
@@ -20,6 +21,7 @@ def https(request):
                 <p>Path:{path}</p>
                 <p>User-agent:{user_agent}</p>
                 """)
+
 #Set cookis
 def set(request):
     #получаем из строки запрос имя пользователя
@@ -29,3 +31,8 @@ def set(request):
     #передаем его куки
     response.set_cookie("username", username)
     return response
+#Get cokkis
+def get(request):
+    #получаем куки с ключом username
+    username = request.COOKIES["username"]
+    return HttpResponse(f"Hello {username}")
